@@ -1,0 +1,15 @@
+<div class="product">
+  <h2><%= link_to product.name, product %></h2>
+  
+  <div><%= product.description %></div>
+  
+  <p>
+    <strong>Price:</strong>
+    <%= number_to_currency product.price %>
+  </p>
+  
+  <p>
+    <%= link_to 'Edit Product', edit_product_path(product) %> -
+    <%= link_to 'Destroy Product', product,  data: {confirm: 'Are you sure?'}, method: :delete %>
+  </p>
+</div>

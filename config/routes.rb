@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   
   root to: 'products#index'
   
+  # The following single line would build all of our RESTful routes.
+  # resources :products, constraints: { id: /\d+/ }
+  
   # CREATE
   get  'products/new' => 'products#new', as: 'new_product' # Show a new product form.
   post 'products'     => 'products#create' # Create the new product.
