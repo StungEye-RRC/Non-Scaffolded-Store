@@ -1,4 +1,4 @@
-<h1>Create a New Product</h1>
+<h1>Edit This Product</h1>
 
 <%= form_for @product do |f| %>
   <% if @product.errors.any? %>
@@ -22,6 +22,6 @@
     <%= f.text_field :price %>
   </p>
   <p>
-    <%= f.submit "Create Product" %>
+    <%= f.submit "Update Product" %>
   </p>
 <% end %>
