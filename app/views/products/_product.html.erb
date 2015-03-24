@@ -2,7 +2,7 @@
   <h2><%= link_to product.name, product %></h2>
   
   <% if product.image_filename.present? %>
-    <p><%= image_tag product.image_filename %></p>
+    <p><%= image_tag product.image_filename, width: '200' %></p>
   <% end %>
   
   <div><%= product.description %></div>
