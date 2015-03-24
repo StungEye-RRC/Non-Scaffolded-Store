@@ -1,6 +1,10 @@
 <div class="product">
   <h2><%= link_to product.name, product %></h2>
   
+  <% if product.image_filename.present? %>
+    <p><%= image_tag product.image_filename %></p>
+  <% end %>
+  
   <div><%= product.description %></div>
   
   <p>
